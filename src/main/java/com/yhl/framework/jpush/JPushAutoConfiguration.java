@@ -1,7 +1,7 @@
-package com.apifan.framework.jpush;
+package com.yhl.framework.jpush;
 
-import com.apifan.framework.jpush.component.JPushApi;
-import com.apifan.framework.jpush.config.JPushProperties;
+import com.yhl.framework.jpush.component.JPushApi;
+import com.yhl.framework.jpush.config.JPushProperties;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -11,12 +11,11 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 自动配置类
  *
- * @author yin
  */
 @Configuration
 @ConditionalOnProperty(prefix = "jpush", name = "app-key")
 @EnableConfigurationProperties(JPushProperties.class)
-@ComponentScan(basePackages = "com.apifan.framework.jpush")
+@ComponentScan(basePackages = "com.yhl.framework.jpush")
 public class JPushAutoConfiguration {
 
     private final JPushProperties jPushProperties;

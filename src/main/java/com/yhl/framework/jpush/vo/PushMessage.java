@@ -1,12 +1,10 @@
-package com.apifan.framework.jpush.vo;
+package com.yhl.framework.jpush.vo;
 
 import java.io.Serializable;
 import java.util.Map;
 
 /**
  * 待推送消息
- *
- * @author yinzl
  */
 public class PushMessage implements Serializable {
     private static final long serialVersionUID = 7913601113654276050L;

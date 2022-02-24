@@ -1,4 +1,4 @@
-package com.apifan.framework.jpush.component;
+package com.yhl.framework.jpush.component;
 
 import cn.jiguang.common.ClientConfig;
 import cn.jiguang.common.connection.HttpProxy;
@@ -15,8 +15,8 @@ import cn.jpush.api.push.model.audience.Audience;
 import cn.jpush.api.push.model.notification.AndroidNotification;
 import cn.jpush.api.push.model.notification.IosNotification;
 import cn.jpush.api.push.model.notification.Notification;
-import com.apifan.framework.jpush.config.JPushProperties;
-import com.apifan.framework.jpush.vo.PushMessage;
+import com.yhl.framework.jpush.config.JPushProperties;
+import com.yhl.framework.jpush.vo.PushMessage;
 import com.google.common.base.Preconditions;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -28,7 +28,6 @@ import java.util.List;
 /**
  * 极光推送API辅助工具
  *
- * @author yin
  */
 public class JPushApi {
     private static final Logger logger = LoggerFactory.getLogger(JPushApi.class);
